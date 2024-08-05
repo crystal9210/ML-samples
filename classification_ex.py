@@ -5,7 +5,9 @@ from sklearn.datasets import load_iris
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, classification_report
 from sklearn.decomposition import PCA # pca:主成分分析をするためのクラス
-# ー＞PCA:多次元データを低次元空間に射影することで、データの次元削減を行う統計手法、より統計的に意味がある次元のみを残し分析に利用することで効果的なデータ分析や加工処理が可能となる
+# ー＞PCA:多次元データを低次元空間に射影することで、データの次元削減を行う統計手法、
+# より統計的に意味がある次元のみを残し分析に利用することでより効率的にデータの特徴や構造を分析しやすくし、
+# 効果的なデータ分析や加工処理が可能となる
 
 # TODO:ロジスティック回帰の各種理論の再学習
 
