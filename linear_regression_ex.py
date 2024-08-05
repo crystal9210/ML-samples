@@ -23,9 +23,12 @@ y_pred = model.predict(X_test)
 mse = mean_squared_error(y_test, y_pred)
 r2 = r2_score(y_test, y_pred)
 
+# 平均二乗誤差（Mean Squared Error, MSE）->各データプロットに対する予測値と実測値の差の二乗の平均値を示す
+# つまり、予測値が実測値から平均どの程度離れているかを単純に評価する
 print(f"Mean Squared Error: {mse}")
+# R2 score->決定係数；モデルの予測値が実行値とどの程度一致しているかを測る指標
+# ー＞0から1まで数値をとり、1に近いほどモデルがデータをよく説明できていることを示す
 print(f"R2 Score: {r2}")
-
 # 結果のプロット
 plt.scatter(X_test, y_test, color='black', label='Actual')
 plt.plot(X_test, y_pred, color='blue', linewidth=3, label='Predicted')
